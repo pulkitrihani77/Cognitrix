@@ -172,29 +172,7 @@ def add_promo(request, code):
 
             except ObjectDoesNotExist:
                 messages.info(request, 'This coupon is not available')
-                return redirect('home')
-
-# @csrf_exempt
-# def verify_payment(request):
-#     if request.method == 'POST':
-#         data = request.POST
-#         context = {}
-#         print(data)
-#         try:
-#             client.utility.verify_payment_signature(data)
-#             razorpay_order_id = data['razorpay_order_id']
-#             razorpay_payment_id = data['razorpay_payment_id']
-#             order = Order.objects.get(order_id = razorpay_order_id)
-#             order.payment_id = razorpay_payment_id
-#             order.ordered = True
-#             order.save()
-#             cart_items = Cart.objects.filter(user=request.user, purchase=False)
-#             for item in cart_items:
-#                 item.purchase = True
-#                 item.save()
-#             return redirect('userhome')
-#         except:
-#             return HttpResponse("Invalid Payment Details")    
+                return redirect('home')  
 
 # UserSignup Form
 def signup(request):

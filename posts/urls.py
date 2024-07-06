@@ -111,7 +111,6 @@ urlpatterns = [
     path('<str:slug>', views.blank_page, name='blank_page'), 
     path('checkout/', views.checkout, name='checkout'), 
     path('add-promocode/', views.add_coupon, name='add_coupon'), 
-    # path('verify_payment/', views.verify_payment, name='verify_payment'), 
     path('allcourses/', views.totalposts, name='all-courses'), 
 
     # url(r'^getSubcategory/$', views.get_subcategory)           
