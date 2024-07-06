@@ -1,5 +1,5 @@
 """
-WSGI config for edureka project.
+WSGI config for Cognitrix project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

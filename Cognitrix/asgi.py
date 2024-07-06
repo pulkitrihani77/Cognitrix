@@ -1,5 +1,5 @@
 """
-ASGI config for edureka project.
+ASGI config for Cognitrix project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
